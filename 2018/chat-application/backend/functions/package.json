@@ -1,0 +1,57 @@
+{
+  "name": "mcc-fall-2018-g09-functions",
+  "version": "0.0.1",
+  "description": "MCC Fall 2018 Group 9 exercise work Cloud Functions for Firebase",
+  "main": "lib/index.js",
+  "engines": {
+    "node": "6"
+  },
+  "scripts": {
+    "prebuild": "tslint --project tsconfig.json",
+    "build": "tsc",
+    "start": "npm run shell",
+    "preshell": "npm run build",
+    "shell": "firebase functions:shell",
+    "preserve": "npm run build",
+    "serve": "firebase serve --only functions",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^5.0.4",
+    "@types/lodash": "^4.14.118",
+    "@types/sharp": "^0.21.0",
+    "firebase-admin": "~6.0.0",
+    "firebase-functions": "^2.1.0",
+    "firebase-tools": "~6.1.1",
+    "fs-extra": "^7.0.1",
+    "lodash": "^4.7.11",
+    "sharp": "^0.21.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://version.aalto.fi/gitlab/CS-E4100/mcc-2018-g09.git"
+  },
+  "keywords": [
+    "aalto",
+    "mcc",
+    "android",
+    "firebase",
+    "exercise"
+  ],
+  "author": "MCC Fall 2018 Group 9",
+  "contributors": [
+    "Aleksi Häkli <aleksi.hakli@aalto.fi>",
+    "Mirco Kroon <mirco.kroon@aalto.fi>",
+    "Kristian Salo <kristian.salo@aalto.fi>",
+    "Anton Keskisaari <anton.keskisaari@aalto.fi>",
+    "Pejam Hassanzedah <pejam.hassanzedah@aalto.fi>"
+  ],
+  "license": "UNLICENSED"
+}

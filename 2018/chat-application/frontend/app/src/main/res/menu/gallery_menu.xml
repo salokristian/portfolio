@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/change_gallery_grouping_date"
+        android:title="@string/chat_images_sort_date"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/change_gallery_grouping_sender"
+        android:title="@string/chat_images_sort_sender"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/change_gallery_grouping_features"
+        android:title="@string/chat_images_sort_features"
+        app:showAsAction="never"
+        />
+</menu>

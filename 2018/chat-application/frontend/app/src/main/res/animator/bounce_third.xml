@@ -1,0 +1,12 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+            android:duration="@integer/bounce_duration"
+            android:propertyName="translateY"
+            android:valueFrom="0"
+            android:valueTo="@integer/bounce_height"
+            android:repeatCount="1"
+            android:repeatMode="reverse"
+            android:startOffset="@integer/bounce_start_third"
+            android:valueType="floatType"
+    />
+</set>

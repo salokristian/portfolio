@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#033766</color>
+    <color name="colorPrimaryDark">#022C52</color>
+    <color name="colorPrimaryDarkWithOpacity">#91022C52</color>
+    <color name="colorAccent">#1D89AB</color>
+    <color name="activityBackground">#F5F5F5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#F5F5F5</color>
+    <color name="darkGrey">#9E9E9E</color>
+    <!--Chat fragment-->
+    <color name="colorChatMessageSelf">#E5E5E5</color>
+    <color name="colorChatMessageOthers">#d7dceffb</color>
+    <color name="colorChatEditText">#f2f2f2</color>
+</resources>

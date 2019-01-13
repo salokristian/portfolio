@@ -1,0 +1,63 @@
+{
+  "rules": {
+    "chats": {
+      "$CHATID": {
+        ".read": "auth != null && data.child('members').hasChild(auth.uid)",
+        ".write": "!data.exists() || data.child('members').hasChild(auth.uid)",
+        "createdAt": { 
+          ".validate": "newData.val() <= now"
+        },
+        "icon": {},
+        "members": {},
+        "title": {}
+      }
+    },
+    "users": {
+      "public": {
+        ".read": "auth != null",
+        "$UID": {
+          ".write": "auth.uid == $UID || auth != null && !data.exists()",
+          "displayName": {},
+          "photoUrl": {},
+          "notificationTokens": {
+            ".read": "auth.uid == $UID",
+            ".write": "auth.uid == $UID || auth != null && !data.exists()"
+          }
+        }
+      },
+      "private": {
+        "$UID": {
+          ".read": "auth.uid == $UID",
+          ".write": "auth.uid == $UID || auth != null && !data.exists()",
+          "chats": {
+            ".read": "auth.uid == $UID",
+            ".write": "auth.uid == $UID || auth != null"
+          },
+          "imageSizing": {}
+        }
+      },
+        "name_index": {
+          "$username": {
+            ".write": true
+          }
+        }
+    },
+    "messages": {
+      ".read": false,
+      ".write": false,
+      "$MSG_CHATID": {
+        ".read": "auth != null && root.child('chats').child($MSG_CHATID).child('members').hasChild(auth.uid)",
+        "$MSG_ID": {
+          ".write": "!data.exists() && auth != null && root.child('chats').child($MSG_CHATID).child('members').hasChild(auth.uid)",
+          "sender": {
+            ".validate": "newData.val() === auth.uid"
+          },
+          "text": {},
+          "createdAt": {
+            ".validate": "newData.val() <= now"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_goto_image_gallery"
+        android:orderInCategory="1"
+        android:title="@string/chat_image_gallery"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_add_new_users"
+        android:orderInCategory="1"
+        android:title="@string/chat_add_users"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_leave_chat"
+        android:orderInCategory="1"
+        android:title="@string/chat_leave"
+        app:showAsAction="never"/>
+
+</menu>

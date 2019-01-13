@@ -1,0 +1,13 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:drawable="@drawable/ic_logo" >
+    <target
+            android:name="dot_left"
+            android:animation="@animator/bounce_first" />
+    <target
+            android:name="dot_center"
+            android:animation="@animator/bounce_second" />
+    <target
+            android:name="dot_right"
+            android:animation="@animator/bounce_third" />
+
+</animated-vector>

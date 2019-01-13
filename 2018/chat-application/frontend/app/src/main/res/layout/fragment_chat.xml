@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:windowBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/chatMessageList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chat_enter_message_width"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/chatSendActionsBar"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+        android:divider="@null"
+        android:dividerHeight="@dimen/chat_message_spacing"
+        android:layout_marginBottom="@dimen/chat_enter_message_margin"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/chatSendActionsBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/chat_enter_message_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/chatEnterMessage"
+            android:layout_width="@dimen/chat_enter_message_width"
+            android:layout_height="@dimen/chat_enter_message_height"
+            android:layout_margin="@dimen/chat_enter_message_margin"
+            android:layout_marginTop="@dimen/chat_enter_message_margin_top"
+            android:hint="@string/chat_enter_message"
+            android:inputType="text"
+            android:background="@color/colorChatEditText"
+            android:padding="6dp"
+            app:layout_constraintEnd_toStartOf="@id/chatSendImage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/chatSendImage"
+            android:background="@drawable/ic_baseline_camera_enhance_24px"
+            android:layout_width="@dimen/chat_enter_message_height"
+            android:layout_height="@dimen/chat_enter_message_height"
+            android:layout_marginTop="@dimen/chat_enter_message_margin"
+            android:layout_marginBottom="@dimen/chat_enter_message_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/chatSendMessage" />
+
+        <ImageButton
+            android:id="@+id/chatSendMessage"
+            android:layout_width="@dimen/chat_enter_message_height"
+            android:layout_height="@dimen/chat_enter_message_height"
+            android:layout_marginTop="@dimen/chat_enter_message_margin"
+            android:layout_marginBottom="@dimen/chat_enter_message_margin"
+            android:background="@drawable/ic_chat_message_send_24px"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

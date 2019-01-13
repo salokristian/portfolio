@@ -1,0 +1,113 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">ChatApp</string>
+
+    <!-- MainActivity -->
+    <string name="main_logout">Logout</string>
+    <string name="main_open_chat">Open chat</string>
+
+    <!-- LoginActivity -->
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="login_action_bar">ChatApp</string>
+    <string name="login_signup">Not a member? Sign up now.</string>
+    <string name="login_empty_email">Please enter a valid email</string>
+    <string name="login_empty_password">Please enter your password</string>
+    <string name="login_failed_title">Cannot log you in</string>
+    <string name="login_failed_explanation">We could not find any accounts matching the email and password you
+        entered.
+    </string>
+    <string name="login_failed_confirm">OK</string>
+    <string name="login_in_progress">Logging in</string>
+    <string name="login_waiting">Please wait...</string>
+
+    <!-- SignupActivity -->
+    <string name="signup_profile">Add your profile photo</string>
+    <string name="signup_display_name">Display name</string>
+    <string name="signup_email">Email</string>
+    <string name="signup_password">Password</string>
+    <string name="signup_signup">Sign up</string>
+    <string name="signup_action_bar">Sign up for ChatApp</string>
+    <string name="signup_failed">E-mail or password is wrong</string>
+    <string name="signup_failed_email">Please enter a valid email</string>
+    <string name="signup_failed_display_name_short">Username must be have at least 4 characters</string>
+    <string name="signup_failed_display_name_not_unique">Username not available</string>
+    <string name="signup_failed_password">Password must be at least 8 characters</string>
+    <string name="signup_profile_update_failed">Updating profile failed!</string>
+    <string name="signup_failed_title">Cannot sign up</string>
+    <string name="signup_failed_explanation">Sign up failed. Please try with another email</string>
+    <string name="signup_failed_confirm">OK</string>
+    <string name="signup_in_progress">Signing up</string>
+    <string name="signup_waiting">Please wait...</string>
+    <string name="signup_default_image_size">Default image size</string>
+    <string name="signup_profile_image_success">Profile image uploaded</string>
+    <string name="signup_profile_image_fail">Uploading profile image failed</string>
+
+    <!--ChatFragment-->
+    <string name="chat_go_back">All chats</string>
+    <string name="chat_send_message">Send</string>
+    <string name="chat_enter_message">Enter message</string>
+    <string name="chat_message_sender_image">Image of message sender</string>
+    <string name="chat_message_image">Sent image</string>
+    <string name="chat_image_upload_choose">Send image from</string>
+    <string-array name="chat_image_upload_options">
+        <item>Camera</item>
+        <item>Gallery</item>
+    </string-array>
+    <string name="chat_image_upload_cancel">Cancel</string>
+    <string name="chat_image_gallery">Gallery</string>
+    <string name="chat_add_users">Add users</string>
+    <string name="chat_leave">Leave</string>
+    <string name="chat_leave_prompt">Are you sure you want to leave this chat?</string>
+    <string name="chat_user_is_leaving">I have left this chat</string>
+    <string name="chat_is_left">You have leaved the chat</string>
+
+
+    <!-- ChatListFragment -->
+    <string name="chatlist_subtitle_members">Chat with %1$d members</string>
+    <string name="chatlist_subtitle_member">Chat with %1$d</string>
+    <string name="chatlist_title">Start a new chat</string>
+
+    <!-- UserlistFragment -->
+    <string name="userlist_large_chat">Are you sure you want to add %1$d users to this chat?</string>
+    <string name="userlist_none_selected">You must select at least one user to create a chat!</string>
+    <string name="userlist_prompt_chat_name">Enter the name of your new chat</string>
+    <string name="userlist_prompt_create">Create</string>
+    <string name="userlist_new_user_added">I added %1$s to this chat</string>
+    <string name="userlist_hint">Enter a username</string>
+    <string name="userlist_user_not_selected">Please select at least one user!</string>
+
+
+    <!-- AccountSettingsFragment -->
+    <string name="setting_logout">Logout</string>
+    <string-array name="setting_image_sizes">
+        <item>original</item>
+        <item>high</item>
+        <item>low</item>
+    </string-array>
+    <!-- Menu -->
+    <string name="menu_profile">Profile</string>
+
+    <!-- Modals -->
+    <string name="modal_cancel">Cancel</string>
+    <string name="modal_ok">OK</string>
+    <string name="modal_yes">Yes</string>
+    <string name="modal_no">No</string>
+'
+    <!--ChatImagesFragment-->
+    <string name="chat_images_sort_date">Date</string>
+    <string name="chat_images_sort_sender">Sender</string>
+    <string name="chat_images_sort_features">Features</string>
+
+    <!--FullScreenImageFragment-->
+    <string name="chat_full_screen_image_download">Download original</string>
+
+    <!--Profile settings-->
+    <string name="profile_save">Save changes</string>
+    <string name="profile_email">Your current email is</string>
+    <string name="profile_image_change">Tap image to change it</string>
+    <string name="profile_image_quality">Default image quality</string>
+    <string name="profile_updated">Profile settings are updated</string>
+
+</resources>

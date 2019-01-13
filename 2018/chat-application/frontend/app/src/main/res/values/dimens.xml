@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="my_value">16dp</dimen>
+
+    <!--ChatFragment-->
+    <dimen name="chat_enter_message_width">0dp</dimen>
+    <dimen name="chat_enter_message_height">40dp</dimen>
+    <dimen name="chat_enter_message_margin">5dp</dimen>
+    <dimen name="chat_enter_message_margin_top">15dp</dimen>
+
+    <dimen name="chat_message_bubble_width">180dp</dimen>
+    <dimen name="chat_message_spacing">6dp</dimen>
+    <dimen name="chat_message_spacing_image">12dp</dimen>
+    <dimen name="chat_message_sender_image_size">30dp</dimen>
+    <dimen name="chat_message_text_width">200dp</dimen>
+    <dimen name="chat_message_text_size">18sp</dimen>
+    <dimen name="chat_message_url_title_text_size">16sp</dimen>
+    <dimen name="chat_message_url_description_text_size">14sp</dimen>
+
+
+    <dimen name="chat_messages_height">400dp</dimen>
+
+    <!--ChatImagesFragment-->
+    <dimen name="chat_images_image_size">105dp</dimen>
+    <dimen name="chat_images_category_column_size">105dp</dimen>
+    <dimen name="chat_images_category_heading_height">30dp</dimen>
+    <dimen name="chat_images_category_heading_text_size">16sp</dimen>
+    <dimen name="chat_images_category_heading_image_size">48dp</dimen>
+    <dimen name="chat_images_category_heading_padding">4dp</dimen>
+
+    <!--FullScreenImageFragment-->
+    <dimen name="chat_image_full_screen_loader">50dp</dimen>
+
+</resources>

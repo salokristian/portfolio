@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Logo loading animation (SlpashActivity) -->
+    <integer name="bounce_duration">350</integer>
+    <integer name="bounce_height">-20</integer>
+    <integer name="bounce_start_second">200</integer>
+    <integer name="bounce_start_third">400</integer>
+    <integer name="bounce_repeat_delay">300</integer>
+
+    <!-- SlpashActivity -->
+    <integer name="splash_refer_delay">3500</integer>
+
+    <!-- User list fragment -->
+    <integer name="userlist_max_search_results">10</integer>
+    <integer name="userlist_search_delay_ms">400</integer>
+</resources>

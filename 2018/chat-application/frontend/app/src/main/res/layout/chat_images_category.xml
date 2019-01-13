@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDarkWithOpacity"
+            android:padding="@dimen/chat_images_category_heading_padding">
+
+            <ImageView
+                android:id="@+id/chatImageCategorySenderImage"
+                android:contentDescription="@string/chat_message_sender_image"
+                android:layout_width="@dimen/chat_images_category_heading_image_size"
+                android:layout_height="@dimen/chat_images_category_heading_image_size" />
+
+            <TextView
+                android:id="@+id/chatImageCategoryTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/chat_images_category_heading_padding"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/chat_images_category_heading_text_size" />
+
+        </LinearLayout>
+
+        <mcc.aalto.fi.chatapp.Views.CustomGridView
+            android:id="@+id/chatImageCategoryGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="@dimen/chat_images_category_column_size"
+            android:gravity="center"
+            android:numColumns="auto_fit" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

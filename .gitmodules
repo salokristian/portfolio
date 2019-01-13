@@ -1,0 +1,3 @@
+[submodule "2018/product-locator"]
+	path = 2018/product-locator
+	url = git@github.com:salokristian/product-locator.git
